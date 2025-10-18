@@ -17551,7 +17551,7 @@
 				wm(this, um, "f").instanceMatrix.needsUpdate = !0
 			}
 			static initResources(e) {
-				e.addResource(), vm(this, hm, (new pl).load("images/smoke.png", (() => {
+				e.addResource(), vm(this, hm, (new pl).load("https://cdn.jsdelivr.net/gh/HaloXboxGamer40/PolytrackEN@release2/polytrack/images/smoke.png", (() => {
 					e.loadedResource()
 				})), "f", gm)
 			}
@@ -17889,7 +17889,7 @@
 			}
 			static initResources(e) {
 				e.addResource();
-				(new oc).load("models/car.glb", (t => {
+				(new oc).load("https://cdn.jsdelivr.net/gh/HaloXboxGamer40/PolytrackEN@release2/polytrack/models/car.glb", (t => {
 					function i(e) {
 						const i = t.scene.getObjectByName(e);
 						if (null == i) throw 'Mesh "' + e + '" does not exist';
@@ -20840,7 +20840,7 @@
 			}
 			static initResources(e) {
 				e.addResource();
-				(new my).load("forced_square.json", (t => {
+				(new my).load("https://cdn.jsdelivr.net/gh/HaloXboxGamer40/PolytrackEN@release2/polytrack/forced_square.json", (t => {
 					r_(this, $y, t, "f", n_), e.loadedResource()
 				}))
 			}
@@ -22696,7 +22696,7 @@
 					i.playUIClick(), XS(this, OS, qS(this, RS, "f").defaultSettings(), "f"), n.updateSettings(Array.from(qS(this, OS, "f"))), XS(this, FS, qS(this, RS, "f").defaultKeyBindings(), "f"), r.generateMeshes(), qS(this, TS, "m", WS).call(this)
 				})), l.appendChild(h);
 				const d = document.createElement("button");
-				d.className = "button apply", d.append(document.createTextNode(t.get("Apply"))), d.innerHTML += ' <img class="button-icon" src="images/apply.svg">', d.addEventListener("click", (() => {
+				d.className = "button apply", d.append(document.createTextNode(t.get("Apply"))), d.innerHTML += ' <img class="button-icon" src="https://cdn.jsdelivr.net/gh/HaloXboxGamer40/PolytrackEN@release2/polytrack/images/apply.svg">', d.addEventListener("click", (() => {
 					i.playUIClick(), n.updateSettings(Array.from(qS(this, OS, "f"))), n.saveSettings(), n.setKeyBindings(Array.from(qS(this, FS, "f"))), r.generateMeshes(), t.language = n.getSetting(jl.Language), a()
 				})), l.appendChild(d), window.addEventListener("keydown", XS(this, US, (e => {
 					"Escape" == e.code && a()
@@ -24586,7 +24586,7 @@
 		};
 		const Xk = class {
 			constructor(e, t) {
-				Nk.add(this), Uk.set(this, void 0), Dk.set(this, void 0), Ok.set(this, !1), Fk.set(this, 0), zk.set(this, null), Gk(this, Dk, new Worker("dist/simulation_worker.bundle.js"), "f"), jk(this, Dk, "f").addEventListener("message", (e => {
+				Nk.add(this), Uk.set(this, void 0), Dk.set(this, void 0), Ok.set(this, !1), Fk.set(this, 0), zk.set(this, null), Gk(this, Dk, new Worker("https://cdn.jsdelivr.net/gh/HaloXboxGamer40/PolytrackEN@release3/polytrack/dist/simulation_worker.bundle.js"), "f"), jk(this, Dk, "f").addEventListener("message", (e => {
 					if (e.data.messageType === Ik.Update) e.data.carId == jk(this, Fk, "f") && Gk(this, zk, {
 						time: new vp(e.data.carTime),
 						hasFinished: e.data.carHasFinished
